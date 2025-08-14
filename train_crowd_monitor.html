@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Crowd Monitor</title>
+    <link rel="stylesheet" href="train_crowd_monitor.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚊 Train Crowd Monitor</h1>
+            <div class="train-info">
+                <div class="train-details">
+                    <h3>KSR Bengaluru – Chennai Central Shatabdi Express</h3>
+                    <p class="train-number">Train No. 12028</p>
+                </div>
+                <div class="station-info">
+                    <div class="current-station">
+                        <span class="station-label">Current Station</span>
+                        <span class="station-name">Katpadi Junction</span>
+                    </div>
+                    <div class="next-station">
+                        <span class="station-label">Next Station</span>
+                        <span class="station-name">Arakkonam Junction</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="compartments-grid">
+            <!-- Compartment 1 -->
+            <div class="compartment-card" id="compartment1">
+                <div class="compartment-header">
+                    <h3>Compartment 1</h3>
+                    <div class="sensor-status">
+                        <span class="sensor-indicator" id="sensor1-ir1"></span>
+                        <span class="sensor-indicator" id="sensor1-ir2"></span>
+                        <span class="sensor-indicator" id="sensor1-ultrasonic"></span>
+                    </div>
+                </div>
+
+                <div class="crowd-level">
+                    <span class="level-text" id="level1">LOW CROWD</span>
+                </div>
+
+            </div>
+
+            <!-- Compartment 2 -->
+            <div class="compartment-card" id="compartment2">
+                <div class="compartment-header">
+                    <h3>Compartment 2</h3>
+                    <div class="sensor-status">
+                        <span class="sensor-indicator" id="sensor2-ir1"></span>
+                        <span class="sensor-indicator" id="sensor2-ir2"></span>
+                        <span class="sensor-indicator" id="sensor2-ultrasonic"></span>
+                    </div>
+                </div>
+
+                <div class="crowd-level">
+                    <span class="level-text" id="level2">MODERATE CROWD</span>
+                </div>
+
+            </div>
+
+            <!-- Compartment 3 -->
+            <div class="compartment-card" id="compartment3">
+                <div class="compartment-header">
+                    <h3>Compartment 3</h3>
+                    <div class="sensor-status">
+                        <span class="sensor-indicator" id="sensor3-ir1"></span>
+                        <span class="sensor-indicator" id="sensor3-ir2"></span>
+                        <span class="sensor-indicator" id="sensor3-ultrasonic"></span>
+                    </div>
+                </div>
+
+                <div class="crowd-level">
+                    <span class="level-text" id="level3">HIGH CROWD</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="legend">
+            <h4>Crowd Levels</h4>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color green"></div>
+                    <span>Low Crowd - Seats Available</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color yellow"></div>
+                    <span>Moderate Crowd - Limited Seats</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color red"></div>
+                    <span>High Crowd - Barely Any Standing Room</span>
+                </div>
+            </div>
+        </div>
+
+
+          </div>
+  
+         <script src="train_crowd_monitor.js"></script>
+</body>
+</html>
+
